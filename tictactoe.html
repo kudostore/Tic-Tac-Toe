@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+</head>
+<style>
+    body{
+        background-color: #003049;
+        text-align: center;
+        color: #FCBF49; 
+    }
+
+    .container{    
+        display: flex;
+        height: 70vh;
+        justify-content: center;
+    }
+    .boxes{
+        height: 60vmin;
+        width: 60vmin;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1px;
+    }
+    .box{
+        background: #D62828;
+        text-align: center ;
+        display: flex;
+        height: 105px;
+        width: 105px;
+        border: none;
+        border-radius: 10px;
+        margin: 2px;
+        gap: 2px;
+        align-items: center;
+        justify-content: center;
+        font-size: 80px;
+        color: #FCBF49; 
+    }
+    
+    #newbtn{
+        color: #F77F00;
+        background-color: #EAE2B7;
+        height: 40px;
+        width: 150px;
+        font-size: 20px;
+        justify-content: center;
+        border: none;
+        border-radius: 4px;
+        padding: 2px;
+        margin: 2px;
+    }
+    #reset{
+        color: #F77F00;
+        background-color: #EAE2B7;
+        height: 40px;
+        width: 150px;
+        font-size: 20px;
+        justify-content: center;
+        border: none;
+        border-radius: 4px;
+        padding: 2px;
+        margin: 2px;
+    }
+    #msg{
+        font-size: 100px;
+        justify-content: center;
+        display: flex;
+    }
+.hide{
+    display: none;
+} 
+.msg-container{
+    height: 1000px;
+    color: #F77F00;
+}
+
+   
+</style>
+<body>
+    <div class="msg-container hide">
+            <p id="msg">heloo  odo djjahf</p>    
+            <button id="newbtn">New Game</button>
+    </div>
+    <h1>WELCOME!</h1>
+    <div class="container">
+        <div class="boxes">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+    </div>
+    <button id="reset">Reset Game</button>
+
+<script src="tictactoe.js"></script>
+</body>
+</html>
